@@ -29,6 +29,7 @@ def calculate_base_amount(salary_doc, event):
 	return
 
 def change_auto_name(self,ev):
+	"""This function changes the default naming series of the vehicle model when it is created"""
 	name_1=self.name1
 	model_=self.vehicle_make
 	year_1=self.model_year
