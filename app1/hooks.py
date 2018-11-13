@@ -29,6 +29,7 @@ app_license = "MIT"
 
 doctype_js = {
 "Salary Slip" : "public/js/custom_hr.js",
+"Vehicle" : "public/js/filter_model.js",
 }
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
@@ -88,6 +89,9 @@ doc_events = {
     },
     "Vehicle Model": {
         "before_save":"app1.utils.hr.change_auto_name"
+     },
+     "Vehicle":{
+        "before_save":"app1.utils.hr.setVehicleName"
      }
     }
 
