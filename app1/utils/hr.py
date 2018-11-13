@@ -14,6 +14,7 @@ def get_days_present(employee,cal_end,cal_start):
 	return package
 
 def calculate_base_amount(salary_doc, event):
+	"""This calculates the amount an employee earns according to his/her attendance in a month"""
 	query = "Select base from `tabSalary Structure Employee` where employee='%s'" %salary_doc.employee
 	query2="SELECT COUNT(*)from tabAttendance where employee_name='%s' and status='Absent' and attendance_date>='%s' and attendance_date<='%s'" %(salary_doc.employee_name,salary_doc.start_date,salary_doc.end_date)
 	sal2=frappe.db.sql(query2)
