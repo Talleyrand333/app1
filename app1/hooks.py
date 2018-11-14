@@ -65,7 +65,7 @@ doctype_js = {
 # ------------------
 # See frappe.core.notifications.get_notification_config
 
-# notification_config = "app1.notifications.get_notification_config"
+notification_config = "app1.notifications.get_notification_config"
 
 # Permissions
 # -----------
