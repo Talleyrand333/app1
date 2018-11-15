@@ -30,6 +30,7 @@ app_license = "MIT"
 doctype_js = {
 "Salary Slip" : "public/js/custom_hr.js",
 "Vehicle" : "public/js/filter_model.js",
+"Vehicle" : "public/js/add_button.js"
 }
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
