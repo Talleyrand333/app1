@@ -30,7 +30,8 @@ app_license = "MIT"
 doctype_js = {
 "Salary Slip" : "public/js/custom_hr.js",
 "Vehicle" : "public/js/filter_model.js",
-"Vehicle" : "public/js/add_button.js"
+#"Vehicle" : "public/js/add_button.js",
+ "Vehicle Servicing Log": "public/js/calculate_total.js",
 }
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
@@ -88,12 +89,15 @@ doc_events = {
     "Salary Slip": {
         "validate": "app1.utils.hr.calculate_base_amount"
     },
-    "Vehicle Model": {
-        "before_save":"app1.utils.hr.change_auto_name"
-     },
+    # "Vehicle Model": {
+    #     "before_save":"app1.utils.hr.change_auto_name"
+    #  },
      "Vehicle":{
         "before_save":"app1.utils.hr.setVehicleName"
-     }
+     },
+     # "Vehicle Servicing Log":{
+     #    "before_save":"app1.utils.hr.setMileage"
+     # }
     }
 
 
