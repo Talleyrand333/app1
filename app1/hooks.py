@@ -95,9 +95,7 @@ doc_events = {
      "Vehicle":{
         "before_save":"app1.utils.hr.setVehicleName"
      },
-     # "Vehicle Servicing Log":{
-     #    "before_save":"app1.utils.hr.setMileage"
-     # }
+    
     }
 
 

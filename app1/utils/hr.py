@@ -55,9 +55,9 @@ def setVehicleName(self,ev):
 # 	result3=list(filter(lambda x:x!=None and x!=make_,result2))
 # 	return(result3)
 
-def setMileage(self,ev):
-	#This method sets the mileage value from a car after being serviced.
-	vehicle_=frappe.get_doc("Vehicle",self.vehicle)
-	vehicle_.odometer_2=self.mileage
-	vehicle_.save()
-	return
+# def setMileage(self,ev):
+# 	#This method sets the mileage value from a car after being serviced.
+# 	vehicle_=frappe.get_doc("Vehicle",self.vehicle)
+# 	vehicle_.last_odometer=self.odometer
+# 	vehicle_.save()
+# 	return

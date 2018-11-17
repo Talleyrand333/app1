@@ -1,4 +1,4 @@
-frappe.ui.form.on('Vehicle', {
+//frappe.ui.form.on('Vehicle', {
 // 	refresh: function(frm){
 // 		var name__=cur_frm.doc.name
 // cur_frm.add_custom_button(("Vehicle Servicing Log"),function(ev){
@@ -8,4 +8,4 @@ frappe.ui.form.on('Vehicle', {
 // 	frappe.set_route("List","Vehicle Trip Log",{"vehicle":name__})
 // },("Show"))
 // }
-})
+//})
