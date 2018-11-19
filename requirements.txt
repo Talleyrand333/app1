@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 frappe
+=======
+frappe
+azure-storage
+>>>>>>> e749145085c0ecdeac8d83ab3f36927a070bec7c

@@ -42,6 +42,7 @@ def setVehicleName(self,ev):
 	licence_plate=self.license_plate
 	model=self.vehicle_model
 	self.name=model+"_"+licence_plate
+	#frappe.msgprint("Name set")
 	return self.name
 
 # @frappe.whitelist()

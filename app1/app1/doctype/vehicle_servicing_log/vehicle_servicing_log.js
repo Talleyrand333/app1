@@ -3,6 +3,6 @@
 
 frappe.ui.form.on('Vehicle Servicing Log', {
 	refresh: function(frm) {
-
+		console.log("on log");
 	}
 });

@@ -4,6 +4,7 @@ include *.json
 include *.md
 include *.py
 include *.txt
+<<<<<<< HEAD
 recursive-include app1 *.css
 recursive-include app1 *.csv
 recursive-include app1 *.html
@@ -16,3 +17,17 @@ recursive-include app1 *.py
 recursive-include app1 *.svg
 recursive-include app1 *.txt
 recursive-exclude app1 *.pyc
+=======
+recursive-include cpfa *.css
+recursive-include cpfa *.csv
+recursive-include cpfa *.html
+recursive-include cpfa *.ico
+recursive-include cpfa *.js
+recursive-include cpfa *.json
+recursive-include cpfa *.md
+recursive-include cpfa *.png
+recursive-include cpfa *.py
+recursive-include cpfa *.svg
+recursive-include cpfa *.txt
+recursive-exclude cpfa *.pyc
+>>>>>>> e749145085c0ecdeac8d83ab3f36927a070bec7c

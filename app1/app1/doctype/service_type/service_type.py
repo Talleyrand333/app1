@@ -8,3 +8,7 @@ from frappe.model.document import Document
 
 class ServiceType(Document):
 	pass
+
+	def autoname(self):
+		self.name=self.service_item
+		return

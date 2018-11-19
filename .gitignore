@@ -3,4 +3,8 @@
 *.egg-info
 *.swp
 tags
+<<<<<<< HEAD
 app1/docs/current
+=======
+cpfa/docs/current
+>>>>>>> e749145085c0ecdeac8d83ab3f36927a070bec7c

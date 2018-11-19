@@ -19,12 +19,11 @@ cur_frm.add_custom_button(("Vehicle Trip Log"),function(ev){
 	frappe.set_route("List","Vehicle Trip Log",{"vehicle":name__})
 },("Show"))
 cur_frm.add_custom_button(("Vehicle Servicing Log"),function(ev){
-	frappe.set_route("Form","Vehicle Servicing Log",cur_frm.doc.name)
+	frappe.new_doc("Vehicle Servicing Log")
 },("Create"))
-console.log(name__);
 cur_frm.add_custom_button(("Vehicle Trip Log"),function(ev){
-	console.log(name__+ "45")
+doc=frappe.new_doc("Vehicle Trip Log")
 },("Create"))
-;
+
 }
 })

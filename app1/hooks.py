@@ -10,13 +10,12 @@ app_icon = "octicon octicon-file-directory"
 app_color = "grey"
 app_email = "ebukaakeru@gmail.com"
 app_license = "MIT"
-
 # Includes in <head>
 # ------------------
-
 # include js, css files in header of desk.html
 # app_include_css = "/assets/app1/css/app1.css"
-# app_include_js = "/assets/app1/js/app1.js"
+
+ #app_include_js = "/assets/app1/js/app1.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/app1/css/app1.css"
@@ -95,7 +94,7 @@ doc_events = {
      "Vehicle":{
         "before_save":"app1.utils.hr.setVehicleName"
      },
-    
+
     }
 
 
@@ -110,11 +109,10 @@ doc_events = {
 
 # Scheduled Tasks
 # ---------------
-
-# scheduler_events = {
-# 	"all": [
-# 		"app1.tasks.all"
-# 	],
+scheduler_events = {
+	"all": [
+		"app1.tasks.all.setter"
+	]
 # 	"daily": [
 # 		"app1.tasks.daily"
 # 	],
@@ -127,7 +125,7 @@ doc_events = {
 # 	"monthly": [
 # 		"app1.tasks.monthly"
 # 	]
-# }
+ }
 
 # Testing
 # -------
