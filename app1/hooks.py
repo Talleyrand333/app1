@@ -94,6 +94,9 @@ doc_events = {
      "Vehicle":{
         "before_save":"app1.utils.hr.setVehicleName"
      },
+     # "Vehicle Servicing Log":{
+     #    "vehicle":"app1.app1.doctype.vehicle_servicing_log.vehicle_servicing_log.setChildTable"
+     # }
 
     }
 

@@ -62,3 +62,21 @@ def setVehicleName(self,ev):
 # 	vehicle_.last_odometer=self.odometer
 # 	vehicle_.save()
 # 	return
+
+@frappe.whitelist()
+def getServicePlan(vehicle_name):
+	current_vehicle=frappe.get_doc("Vehicle",vehicle_name)
+	vehicle_model=current_vehicle.vehicle_model
+	query1="select service_item,type,name from `tabService Plan Template` where  parent='%s' " %vehicle_model
+	result_set=frappe.db.sql(query1,as_dict=1)
+	service_item_list=[]
+	service_type_list=[]
+	name_list=[]
+	for i in result_set:
+		service_item_list.append(i.service_item)
+	for i in result_set:
+		service_type_list.append(i.type)
+	container=[]
+	container.append(service_item_list)
+	container.append(service_type_list)
+	return(container)

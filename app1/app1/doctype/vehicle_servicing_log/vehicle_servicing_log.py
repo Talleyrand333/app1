@@ -16,3 +16,15 @@ class VehicleServicingLog(Document):
 		name2=start_date+"_"+license_plate
 		self.name=name2
 		return
+
+	# @frappe.whitelist()
+	# def getServicePlan(vn):
+	# 	current_vehicle=frappe.get_doc("Vehicle",vn)
+	# 	vehicle_model=current_vehicle.vehicle_model
+	# 	service_plan=vehicle_model.service_plan_
+	# 	return service_plan
+
+# @frappe.whitelist()
+# def setChildTable(name):
+# 	print("Ok")
+# 	return("linked")
